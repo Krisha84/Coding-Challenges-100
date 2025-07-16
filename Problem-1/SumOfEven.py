@@ -5,12 +5,9 @@ arr = []
 
 print("Enter elements into array : ")
 for i in range(n) :
-    element = int(input(f"arr[{i}] : "))
+    element = int(input("arr[",i,"] : "))
     arr.append(element)
 
-sum = 0
-for i in arr :
-    if i % 2 == 0 :
-        sum += i
+sum = sum(i for i in arr if i % 2 == 0)
 
-print("The sum of even numbers : ", sum)
+print("Sum of even numbers : ", sum)
