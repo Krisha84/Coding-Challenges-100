@@ -1,0 +1,18 @@
+// Print a following pattern  
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4
+
+#include<stdio.h>
+
+void main(){
+
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < i; j++){
+            printf("%d ", (j+1));
+        }
+        printf("\n");
+    }
+
+}
